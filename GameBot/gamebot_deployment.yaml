@@ -47,4 +47,6 @@ spec:
           - name: "PICK_STRATEGY"
             value: "RANDOM"
           - name: "APPINSIGHTS_INSTRUMENTATIONKEY"
-            value: "be292741-80eb-4e8e-b5c1-9476756053f7"            
+            value: "be292741-80eb-4e8e-b5c1-9476756053f7"
+          - name: "FF_BETS"
+            value: "true"              
