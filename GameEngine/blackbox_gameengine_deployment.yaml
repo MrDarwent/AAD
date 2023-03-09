@@ -53,10 +53,10 @@ spec:
       labels:
         name: blackboxgameengine        
     spec:
-      securityContext:
-        runAsUser: 1000
-        runAsGroup: 3000
-        fsGroup: 2000
+      # securityContext:
+      #   runAsUser: 1000
+      #   runAsGroup: 3000
+      #   fsGroup: 2000
       containers:
       - name: blackboxgameengine
         image: ghcr.io/azure-adventure-day/azure-adventure-day-coach/gamedayengine-web:latest
@@ -85,8 +85,8 @@ spec:
         env: 
           - name: "ASPNETCORE_URLS"
             value: "http://*:81/match"
-        securityContext:
-          allowPrivilegeEscalation: false
+        # securityContext:
+        #   allowPrivilegeEscalation: false
       volumes:
       - name: config-volume
         hostPath:
