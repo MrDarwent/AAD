@@ -35,7 +35,7 @@ spec:
         name: gamebot        
     spec:
       imagePullSecrets:
-        - name: teamregistry
+        - name: team1acre9d8c0
       containers:
       - name: gamebot
         image: ghcr.io/azure-adventure-day/azure-adventure-day-coach/gamebot:latest
