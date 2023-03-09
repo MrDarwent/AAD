@@ -38,7 +38,7 @@ spec:
         - name: team1acre9d8c0
       containers:
       - name: gamebot
-        image: ghcr.io/azure-adventure-day/azure-adventure-day-coach/gamebot:latest
+        image: team1acre9d8c0.azurecr.io/gamebot:latest
         imagePullPolicy: Always
         ports:
           - containerPort: 8080
