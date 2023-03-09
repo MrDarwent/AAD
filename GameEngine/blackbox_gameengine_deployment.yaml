@@ -72,22 +72,3 @@ spec:
             value: "http://gamebot/pick"
           - name: "APPINSIGHTS_INSTRUMENTATIONKEY"
             value: "be292741-80eb-4e8e-b5c1-9476756053f7"            
-      - name: istio-proxy
-        image: ghcr.io/azure-adventure-day/azure-adventure-day-coach/gamedayengine-sidecar:latest
-        imagePullPolicy: Always
-        volumeMounts:
-        - mountPath: /meshconfig
-          name: config-volume
-        ports:
-          - containerPort: 81
-            name: servicemesh         
-            protocol: TCP
-        env: 
-          - name: "ASPNETCORE_URLS"
-            value: "http://*:81/match"
-        # securityContext:
-        #   allowPrivilegeEscalation: false
-      volumes:
-      - name: config-volume
-        hostPath:
-          path: /etc/kubernetes/
