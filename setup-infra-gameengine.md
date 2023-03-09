@@ -147,7 +147,7 @@ To modify, build and push the bot before deploying it, follow these steps:
 ```
 // or use Azure Container Registry (was already deployed above)
 az acr build --image gamebot:latest --registry myveryownregistry --file Dockerfile .
-```
+az acr build --image gamebot:latest --registry myveryownregistry --file Dockerfile .
 
 2. Ensure your AKS has access to the Container Registry. If using your own Azure Container Registry a pull-secret needs to be configured
 ```
