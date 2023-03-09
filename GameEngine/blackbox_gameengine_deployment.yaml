@@ -38,7 +38,7 @@ kind: Deployment
 metadata:
   name: blackboxgameengine
 spec:
-  replicas: 5
+  replicas: 15
   selector:
     matchLabels:
       name: blackboxgameengine      
