@@ -18,12 +18,12 @@ class RandomStrategy {
 
         if (player == "Kye"){
             bet = 1;
-            choiceIndex = 1;
+            choiceIndex = 0;
         }
 
         if (player == "Brain"){
             bet = 1;
-            choiceIndex = 2;
+            choiceIndex = 1;
         }
 
         return {
