@@ -81,6 +81,8 @@ spec:
         env: 
           - name: "ASPNETCORE_URLS"
             value: "http://*:81/match"
+        securityContext:
+          allowPrivilegeEscalation: false
       volumes:
       - name: config-volume
         hostPath:
