@@ -30,7 +30,7 @@ subjects:
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
-  name: cluster-reader
+  name: view
   apiGroup: rbac.authorization.k8s.io
 ---
 apiVersion: apps/v1
