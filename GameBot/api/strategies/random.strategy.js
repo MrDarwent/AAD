@@ -4,18 +4,30 @@ const { RPSLSChoices } = require('../settings/rpslsOptions');
 class RandomStrategy {
 
     pick() {
-        const choiceIndex = Math.floor((Math.random() * RPSLSChoices.length - 1) + 1);
+        var choiceIndex = Math.floor((Math.random() * RPSLSChoices.length - 1) + 1);
 
         var bet = null;
+        var player = os.hostname();
+
         if (process.env.FF_BETS) {
             // The bet of Humans that they will win
             // value of 1 means if Humans win, they will get 2x of the score - if they loose they loose 2x of the score
             // If null the Humans player does not support bets, value needs to be between 0 and 1
+            bet = 0;
+        }
+
+        if (player == "Kye"){
             bet = 1;
+            choiceIndex = 1;
+        }
+
+        if (player == "Brain"){
+            bet = 1;
+            choiceIndex = 2;
         }
 
         return {
-            "player":  os.hostname(),
+            "player":  player,
             "playerType": "node",
             "text": RPSLSChoices[choiceIndex],
             "bet": bet,

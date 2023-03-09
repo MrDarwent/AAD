@@ -14,12 +14,6 @@ const pick = async (req, res) => {
     const strategyOption = process.env.PICK_STRATEGY || "RANDOM";
     const result = pickFromStrategy(strategyOption);
 
-    // TODO: implement custom arcade intelligence here, see also ./GameBot/README.md for sample requests    
-    if (player1Name == "Kye") {
-       //strategyOption = "CUSTOM";
-       result.text = "rock";
-    }
-
     console.log('Against ' + player1Name + ', strategy ' + strategyOption + '  played ' + result.text);
 
     const applicationInsightsIK = process.env.APPINSIGHTS_INSTRUMENTATIONKEY;
