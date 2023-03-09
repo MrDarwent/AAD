@@ -63,8 +63,7 @@ spec:
             protocol: TCP
         env: 
           - name: "ConnectionStrings__GameEngineDB"
-            value: "c5835678-73e3-4a07-b154-3261adea664f"
-SQL_CONNECTION_STRING = "Server=tcp:game-sqlserver-e9d8c0.database.windows.net,1433;Initial Catalog=gamedb;Persist Security Info=False;User ID=gamedbadministrator;Password=VTW88YgfLhjZ8xfw;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+            value: "Server=tcp:game-sqlserver-e9d8c0.database.windows.net,1433;Initial Catalog=gamedb;Persist Security Info=False;User ID=gamedbadministrator;Password=VTW88YgfLhjZ8xfw;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
           - name: "ARCADE_BACKENDURL"
             value: "http://gamebot/pick"
 #          - name: "APPINSIGHTS_INSTRUMENTATIONKEY"
