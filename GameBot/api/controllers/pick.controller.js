@@ -16,7 +16,7 @@ const pick = async (req, res) => {
 
     // TODO: implement custom arcade intelligence here, see also ./GameBot/README.md for sample requests    
     if (player1Name == "Kye") {
-       strategyOption = "CUSTOM";
+       //strategyOption = "CUSTOM";
        result.text = "rock";
     }
 
