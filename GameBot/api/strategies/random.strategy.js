@@ -13,16 +13,14 @@ class RandomStrategy {
             // The bet of Humans that they will win
             // value of 1 means if Humans win, they will get 2x of the score - if they loose they loose 2x of the score
             // If null the Humans player does not support bets, value needs to be between 0 and 1
-            bet = 0;
+            bet = 1;
         }
 
         if (player == "Kye"){
-            bet = 1;
             choiceIndex = 0;
         }
 
         if (player == "Brain"){
-            bet = 1;
             choiceIndex = 1;
         }
 
